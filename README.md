@@ -11,3 +11,4 @@ radiographs. As a group, we developed three different convolutional neural netwo
 best model, which is based on VGG16 network, had a mean absolute deviation (MAD) of 9.63
 months on the test set, which is competitive relative to other participants in the challenge
 leaderboard.
+I was in charge of the ResNet34.
