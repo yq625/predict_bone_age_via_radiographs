@@ -38,7 +38,7 @@ class Boneagedataset(Dataset):
         image = np.asarray(image)
         image = (image - image.mean()) / image.std()
         image = torch.cuda.FloatTensor(image)
-        image = image.repeat(image[None,...],3,axis=0)
+        image = image.repeat(3,1,1)
         
         image_bone_age = self.data_frame.iloc[idx, 1]
         image_bone_age = torch.cuda.FloatTensor([image_bone_age])
